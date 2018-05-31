@@ -1,4 +1,4 @@
-! Standard (Mod 1) model of IEEE 34 Bus Test Feeder
+! First Change! Standard (Mod 1) model of IEEE 34 Bus Test Feeder githubbbbb
 
 ! Note: Mod 2 better accounts for distributed load.
 
@@ -11,7 +11,7 @@ New object=circuit.ieee34-1
 ! Substation Transformer  -- Modification: Make source very stiff by defining a tiny leakage Z
 New Transformer.SubXF Phases=3 Windings=2 Xhl=0.01    ! normally 8
 ~ wdg=1 bus=sourcebus conn=Delta kv=69    kva=25000   %r=0.0005   !reduce %r, too
-~ wdg=2 bus=800       conn=wye   kv=24.9  kva=25000   %r=0.0005
+~ wdg=2 bus=800       conn=wye   kv=24.9  kva=25000   %r=0.0005 
 
 ! import line codes with phase impedance matrices
 Redirect        IEEELineCodes.dss   ! revised according to Later test feeder doc
